@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.27428.2037
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PriceIntelligence", "PriceIntelligence\PriceIntelligence.csproj", "{523B4363-DF6A-4A00-9831-386B5DAF5D99}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CasioScrapping", "CasioScrapping\CasioScrapping.csproj", "{B99F53AA-5049-4A01-A272-A7F40718174D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CasioShopBgScrapping", "CasioScrapping\CasioShopBgScrapping.csproj", "{B99F53AA-5049-4A01-A272-A7F40718174D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmazonFunctions", "AmazonFunctions\AmazonFunctions.csproj", "{436FBAFE-9914-4DCC-9904-9E6665FA5F36}"
 EndProject
