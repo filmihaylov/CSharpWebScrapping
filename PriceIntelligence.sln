@@ -5,6 +5,16 @@ VisualStudioVersion = 15.0.27428.2037
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PriceIntelligence", "PriceIntelligence\PriceIntelligence.csproj", "{523B4363-DF6A-4A00-9831-386B5DAF5D99}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CasioScrapping", "CasioScrapping\CasioScrapping.csproj", "{B99F53AA-5049-4A01-A272-A7F40718174D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmazonFunctions", "AmazonFunctions\AmazonFunctions.csproj", "{436FBAFE-9914-4DCC-9904-9E6665FA5F36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleTranslate", "GoogleTranslate\GoogleTranslate.csproj", "{641C4229-D53D-4325-82C8-22F4FC20734B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyExchange", "PriceExchange\CurrencyExchange.csproj", "{F473AFA2-2E38-4544-A5DF-FE3EBF239295}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Storage", "Storage\Storage.csproj", "{5CAE6D3E-15D5-4BBA-BE79-1817DDDD8316}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +25,26 @@ Global
 		{523B4363-DF6A-4A00-9831-386B5DAF5D99}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{523B4363-DF6A-4A00-9831-386B5DAF5D99}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{523B4363-DF6A-4A00-9831-386B5DAF5D99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B99F53AA-5049-4A01-A272-A7F40718174D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B99F53AA-5049-4A01-A272-A7F40718174D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B99F53AA-5049-4A01-A272-A7F40718174D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B99F53AA-5049-4A01-A272-A7F40718174D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{436FBAFE-9914-4DCC-9904-9E6665FA5F36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{436FBAFE-9914-4DCC-9904-9E6665FA5F36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{436FBAFE-9914-4DCC-9904-9E6665FA5F36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{436FBAFE-9914-4DCC-9904-9E6665FA5F36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{641C4229-D53D-4325-82C8-22F4FC20734B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{641C4229-D53D-4325-82C8-22F4FC20734B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{641C4229-D53D-4325-82C8-22F4FC20734B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{641C4229-D53D-4325-82C8-22F4FC20734B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F473AFA2-2E38-4544-A5DF-FE3EBF239295}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F473AFA2-2E38-4544-A5DF-FE3EBF239295}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F473AFA2-2E38-4544-A5DF-FE3EBF239295}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F473AFA2-2E38-4544-A5DF-FE3EBF239295}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CAE6D3E-15D5-4BBA-BE79-1817DDDD8316}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CAE6D3E-15D5-4BBA-BE79-1817DDDD8316}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CAE6D3E-15D5-4BBA-BE79-1817DDDD8316}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CAE6D3E-15D5-4BBA-BE79-1817DDDD8316}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
