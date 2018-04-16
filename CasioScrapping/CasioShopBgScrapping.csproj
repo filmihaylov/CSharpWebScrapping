@@ -55,7 +55,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CasioShopBgScrapper.cs" />
+    <Compile Include="CasioShopEndpoints.cs" />
     <Compile Include="CassioShopBgAllWatchLinks.cs" />
+    <Compile Include="Exceptions\WatchesLinksNotCorrectNumberException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WatchPageScrapper.cs" />
   </ItemGroup>

@@ -50,5 +50,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CasioScrapping\CasioShopBgScrapping.csproj">
+      <Project>{B99F53AA-5049-4A01-A272-A7F40718174D}</Project>
+      <Name>CasioShopBgScrapping</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
