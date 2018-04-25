@@ -1,4 +1,5 @@
-﻿using CasioShopBgScrapping.Exceptions;
+﻿using CasioScrapping.Exceptions;
+using CasioShopBgScrapping.Exceptions;
 using HtmlAgilityPack;
 using ScrapySharp.Extensions;
 using ScrapySharp.Network;
@@ -119,17 +120,24 @@ namespace CasioShopBgScrapping
         // this method appends links to the static private list watch links
         private static void AppendLinksToList(WebPage PageResult)
         {
-            var watchDivs = PageResult.Html.CssSelect("div.product_box");
-            foreach (var watchdiv in watchDivs)
+            try
             {
-                var links = watchdiv.CssSelect("a");
-                foreach (var href in links)
+                var watchDivs = PageResult.Html.CssSelect("div.product_box");
+                foreach (var watchdiv in watchDivs)
                 {
-                    if (href.InnerText.Contains("Casio") || href.InnerText.Contains("CASIO"))
+                    var links = watchdiv.CssSelect("a");
+                    foreach (var href in links)
                     {
-                        WatchesLinks.Add(href.GetAttributeValue("href"));
+                        if (href.InnerText.Contains("Casio") || href.InnerText.Contains("CASIO"))
+                        {
+                            WatchesLinks.Add(href.GetAttributeValue("href"));
+                        }
                     }
                 }
+            }
+            catch(Exception e)
+            {
+                throw new CouldNotScrapWathcesLinksFromBasePageException(e.Message);
             }
         }
 
