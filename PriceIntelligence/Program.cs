@@ -15,6 +15,7 @@ namespace PriceIntelligence
             foreach (var link in links)
             {
                 Console.WriteLine(link);
+                Console.WriteLine("HAHAHA");
             }
 
             Console.ReadKey();
