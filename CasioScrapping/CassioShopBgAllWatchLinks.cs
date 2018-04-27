@@ -39,7 +39,7 @@ namespace CasioShopBgScrapping
             List<string> WatchesLinksTrimmed = new List<string>();
             foreach (var wathcLink in WatchesLinks)
             {
-                WatchesLinksTrimmed.Add(wathcLink.Trim());
+                WatchesLinksTrimmed.Add(BaseUrl + wathcLink.Trim());
             }
 
             return WatchesLinksTrimmed;
