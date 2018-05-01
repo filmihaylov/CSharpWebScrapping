@@ -117,7 +117,7 @@ namespace CasioShopBgScrapping
                 var nodesLink = pageWatchResult.Html.CssSelect("a#product");
                 var linkTag = nodesLink.CssSelect("img").First();
                 var linkImage = linkTag.GetAttributeValue("src");
-                string imageFullLink = this.BaseUrl + linkImage.ToString().Trim();
+                string imageFullLink = this.BaseUrl + "/" + linkImage.ToString().Trim();
                 return imageFullLink;
             }
             catch(Exception e)

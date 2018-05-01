@@ -1,4 +1,9 @@
-﻿using CasioShopBgScrapping;
+﻿using CasioScrapping.DTOs;
+using CasioShopBgScrapping;
+using PriceIntelligence.Mappers;
+using Storage;
+using Storage.Models;
+using Storage.StorageAbstraction;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,14 +16,34 @@ namespace PriceIntelligence
     {
         static void Main(string[] args)
         {
-            List<string> links = CassioShopBgAllWatchLinks.AllWatchesPageLinks();
-            foreach (var link in links)
-            {
-                Console.WriteLine(link);
-                Console.WriteLine("HAHAHA");
-            }
+            //List<string> links = CassioShopBgAllWatchLinks.AllWatchesPageLinks();
+            //foreach (var link in links)
+            //{
+            //    Console.WriteLine(link);
+            //}
 
-            Console.ReadKey();
+            //WatchCasioBgScrappeDTO testWatch = new CasioShopBgScrapper(links).ScrapeAWatch(links[1]);
+            //Console.OutputEncoding = Encoding.UTF8;
+            //Console.WriteLine(testWatch.ImageLink);
+            //Console.WriteLine(testWatch.Name);
+            //Console.WriteLine(testWatch.Price);
+            //Console.WriteLine(testWatch.WatchDescription);
+            //Console.WriteLine(testWatch.WatchUrl);
+
+            List <WatchCasioBgScrappeDTO> scrapedWatches = new CasioShopBgScrapper().ScrapeAllWatches();
+
+            foreach(var scrWatch in scrapedWatches)
+            {
+                try
+                {
+                    CasioWatchStorage.StoreWatche(CasioWatchModellMapper.ConvertToDBModelInitial(scrWatch));
+                }
+                catch(Exception e)
+                {
+                    Console.WriteLine(e.Message);
+                }
+            }
+        
         }
     }
 }

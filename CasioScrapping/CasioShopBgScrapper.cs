@@ -16,6 +16,12 @@ namespace CasioShopBgScrapping
             this.allWatchLinks = CassioShopBgAllWatchLinks.AllWatchesPageLinks();
         }
 
+
+        public CasioShopBgScrapper(List<string> WatchLinks)
+        {
+            this.allWatchLinks = WatchLinks;
+        }
+
         public WatchCasioBgScrappeDTO ScrapeAWatch(string WatchUrl)
         {
             WatchPageScrapper watchScrap = new WatchPageScrapper(WatchUrl);
@@ -35,6 +41,11 @@ namespace CasioShopBgScrapping
                 scrapedWatchesList.Add(scrapedWatch);
             }
             return scrapedWatchesList;
+        }
+
+        public List<string> GetAllWatchesLinks()
+        {
+            return this.allWatchLinks;
         }
 
     }
