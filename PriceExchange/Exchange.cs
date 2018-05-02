@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace PriceExchange
 {
-    public class Class1
+    public static class Exchange
     {
+        // access key  http://data.fixer.io/api/latest?access_key=3f02108c7353ff0dc1bd5d6d0469309b
+
+
     }
 }

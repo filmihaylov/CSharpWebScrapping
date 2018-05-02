@@ -7,6 +7,7 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace PriceIntelligence.Mappers
@@ -23,7 +24,8 @@ namespace PriceIntelligence.Mappers
             }
             catch(Exception e)
             {
-               
+                string removeCharacters = Regex.Replace(scrapedWatchModel.Price.Trim(), "[^.0-9]", "");
+                scrapedWatchModelPrice = Convert.ToDecimal(removeCharacters);
             }
 
             watch.Price = scrapedWatchModelPrice;
@@ -67,7 +69,8 @@ namespace PriceIntelligence.Mappers
             }
             catch (Exception e)
             {
-
+                string removeCharacters = Regex.Replace(scrapedWatchModel.Price.Trim(), "[^.0-9]", "");
+                scrapedWatchModelPrice = Convert.ToDecimal(removeCharacters);
             }
 
             watch.Price = scrapedWatchModelPrice;
