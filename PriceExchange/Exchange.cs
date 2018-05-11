@@ -14,7 +14,7 @@ namespace PriceExchange
     {
         // access key  http://data.fixer.io/api/latest?access_key=3f02108c7353ff0dc1bd5d6d0469309b
         private static string exchangeRateUrl = "http://data.fixer.io/api/latest?access_key=3f02108c7353ff0dc1bd5d6d0469309b&symbols=BGN,GBP";
-        public static BGGBPCurrencyDTO exhangeRate = getExchangeRate();
+        private static BGGBPCurrencyDTO exhangeRate = getExchangeRate();
 
 
         public static decimal convertFromPoundsToBGN(decimal ammount)
