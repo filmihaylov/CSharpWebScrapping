@@ -59,9 +59,21 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AmazonFunctions\AmazonFunctions.csproj">
+      <Project>{436FBAFE-9914-4DCC-9904-9E6665FA5F36}</Project>
+      <Name>AmazonFunctions</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CasioScrapping\CasioShopBgScrapping.csproj">
       <Project>{B99F53AA-5049-4A01-A272-A7F40718174D}</Project>
       <Name>CasioShopBgScrapping</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GoogleTranslate\Translate.csproj">
+      <Project>{641C4229-D53D-4325-82C8-22F4FC20734B}</Project>
+      <Name>Translate</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PriceExchange\CurrencyExchange.csproj">
+      <Project>{F473AFA2-2E38-4544-A5DF-FE3EBF239295}</Project>
+      <Name>CurrencyExchange</Name>
     </ProjectReference>
     <ProjectReference Include="..\Storage\Storage.csproj">
       <Project>{5CAE6D3E-15D5-4BBA-BE79-1817DDDD8316}</Project>

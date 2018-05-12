@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CasioShopBgScrapping", "Cas
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmazonFunctions", "AmazonFunctions\AmazonFunctions.csproj", "{436FBAFE-9914-4DCC-9904-9E6665FA5F36}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleTranslate", "GoogleTranslate\GoogleTranslate.csproj", "{641C4229-D53D-4325-82C8-22F4FC20734B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Translate", "GoogleTranslate\Translate.csproj", "{641C4229-D53D-4325-82C8-22F4FC20734B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyExchange", "PriceExchange\CurrencyExchange.csproj", "{F473AFA2-2E38-4544-A5DF-FE3EBF239295}"
 EndProject
