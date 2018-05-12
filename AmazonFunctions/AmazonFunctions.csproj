@@ -57,6 +57,7 @@
     <Compile Include="AmazonSearch\ComparePriceAmazon.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="DTOs\AmazonWatchPriceDTO.cs" />
+    <Compile Include="DTOs\SimpleWatchForSearchQueryDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -64,6 +65,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PriceExchange\CurrencyExchange.csproj">
+      <Project>{F473AFA2-2E38-4544-A5DF-FE3EBF239295}</Project>
+      <Name>CurrencyExchange</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

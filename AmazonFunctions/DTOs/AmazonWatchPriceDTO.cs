@@ -9,7 +9,9 @@ namespace AmazonFunctions.DTOs
     public class AmazonWatchPriceDTO
     {
         public string WatchName { get; set; }
+        public string AmazonWatchNameFound { get; set; }
         public decimal AmazonPrice { get; set; }
         public decimal BGWatchPrice { get; set; }
+        public bool BeatsAmazonPrice { get; set; }
     }
 }
