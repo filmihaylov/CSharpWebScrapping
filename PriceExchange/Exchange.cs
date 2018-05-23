@@ -12,8 +12,8 @@ namespace PriceExchange
 {
     public static class Exchange
     {
-        // access key  http://data.fixer.io/api/latest?access_key=3f02108c7353ff0dc1bd5d6d0469309b
-        private static string exchangeRateUrl = "http://data.fixer.io/api/latest?access_key=3f02108c7353ff0dc1bd5d6d0469309b&symbols=BGN,GBP";
+     
+        private static string exchangeRateUrl = "http://data.fixer.io/api/latest?access_key=&symbols=BGN,GBP";
         private static BGGBPCurrencyDTO exhangeRate = GetExchangeRate();
 
 

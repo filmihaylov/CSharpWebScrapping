@@ -8,7 +8,7 @@ namespace CasioShopBgScrapping
 {
     public static class CasioShopEndpoints
     {
-        public static string BaseUrl = "https://casioshop.bg";
+        public static string BaseUrl = "";
         public static string MenWathces = "/men-watches";
         public static string WomenWatches = "/ladie-watches";
     }
